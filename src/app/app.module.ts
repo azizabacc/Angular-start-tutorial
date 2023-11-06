@@ -12,7 +12,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CourseContainerComponent } from './course-container/course-container.component';
 import { IntroComponent } from './intro/intro.component';
-
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +25,14 @@ import { IntroComponent } from './intro/intro.component';
     NavbarComponent,
     FooterComponent,
     CourseContainerComponent,
-    IntroComponent
+    IntroComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
