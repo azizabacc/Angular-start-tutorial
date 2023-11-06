@@ -1,0 +1,36 @@
+<!-- the variable #frm can access all the value of the form -->
+<form #frm1 = 'ngForm' (ngSubmit) ='updateInfo1(frm1)'>
+    <div class="">
+        <input type="text" name="location" value="" ngModel>
+        <button type="submit" name="button">Add info</button>
+    </div>
+</form>
+<form #frm2 = 'ngForm' (ngSubmit) ='updateInfo2(frm2)'>
+    <div class="">
+        <input type="text" name="location" value="" ngModel>
+        <button type="submit" name="button">Add info</button>
+    </div>
+</form>
+<form #frm3 = 'ngForm' (ngSubmit) ='updateInfo3(frm3)'>
+    <div class="">
+        <input type="text" name="location" value="" ngModel>
+        <button type="submit" name="button">Add info</button>
+    </div>
+</form>
+
+
+
+    <button type="button" name="button" (click)="getInfoFromService1()">Me</button>    
+    <ul class="list-group">
+    <li *ngFor="let info of inforeceived1" class="list-group-info">{{info}}</li>
+</ul>
+
+<button type="button" name="button" (click)="getInfoFromService2()">Him</button>    
+<ul class="list-group">
+    <li *ngFor="let info of inforeceived2" class="list-group-info">{{info}}</li>
+</ul>
+
+<button type="button" name="button" (click)="getInfoFromService3()">Others</button>    
+<ul class="list-group">
+    <li *ngFor="let info of inforeceived3" class="list-group-info">{{info}}</li>
+</ul>
