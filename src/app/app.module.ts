@@ -8,6 +8,10 @@ import { ImagecomponentComponent } from './imagecomponent/imagecomponent.compone
 import { EmpInfoComponent } from './emp-info/emp-info.component';
 import { FormComponentComponent } from './form-component/form-component.component';
 import { EInfoComponent } from './e-info/e-info.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { CourseContainerComponent } from './course-container/course-container.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { EInfoComponent } from './e-info/e-info.component';
     ImagecomponentComponent,
     EmpInfoComponent,
     FormComponentComponent,
-    EInfoComponent
+    EInfoComponent,
+    NavbarComponent,
+    FooterComponent,
+    CourseContainerComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
